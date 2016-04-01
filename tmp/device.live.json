@@ -1,0 +1,65 @@
+{
+  "name": "meshblu->splunk",
+  "type": "device:forwarder",
+  "owner": "28cfc69f-b973-49bc-bc7b-a1af9889cbc3",
+  "dataStore": "Splunk Event Collector",
+  "logoUrl": "https://s3-us-west-2.amazonaws.com/octoblu-icons/channel/splunk.svg",
+  "connector": "meshblu-splunk-event-collector",
+  "options": {
+    "SplunkEventUrl": "https://input-prd-p-9jk8qlgs9lj5.cloud.splunk.com:8088/services/collector",
+    "EventCollectorToken": "BCE56C5F-D0E8-4B73-BAE9-4D669D6DEF95"
+  },
+  "optionsSchema": {
+    "type": "object",
+    "properties": {
+      "EventCollectorToken": {
+        "title": "Event Collector Token",
+        "type": "string",
+        "required": true
+      },
+      "SplunkEventUrl": {
+        "title": "Splunk Event URL",
+        "type": "string",
+        "required": true
+      }
+    }
+  },
+  "gateblu": "39d8a69b-b58e-4fa8-810a-95c0e9bafe72",
+  "subscriptions": [
+    "02c3feff-aa01-4ed4-a158-e32bf9ea008a"
+  ],
+  "configureWhitelist": [
+    "28cfc69f-b973-49bc-bc7b-a1af9889cbc3",
+    "39d8a69b-b58e-4fa8-810a-95c0e9bafe72"
+  ],
+  "discoverWhitelist": [
+    "28cfc69f-b973-49bc-bc7b-a1af9889cbc3",
+    "39d8a69b-b58e-4fa8-810a-95c0e9bafe72"
+  ],
+  "sendAsWhitelist": [
+    "39d8a69b-b58e-4fa8-810a-95c0e9bafe72"
+  ],
+  "geo": {},
+  "ipAddress": "",
+  "meshblu": {
+    "createdAt": "2016-03-28T22:59:50+00:00",
+    "hash": "TlFsdrbunYPwV4/yCTxHYK55mbOrtQ7afXEUb1f6MK8=",
+    "updatedAt": "2016-03-28T23:00:43+00:00",
+    "tokens": {
+      "9eRKdbqunaFW/D6ejQqRyLgVN4uFB8SYqBqeSLTq2MQ=": {
+        "uuid": "b190e8eb-f8b5-42a2-b264-df4791352536",
+        "createdAt": "2016-03-28T23:05:13.128Z"
+      }
+    }
+  },
+  "online": false,
+  "socketid": "",
+  "uuid": "b190e8eb-f8b5-42a2-b264-df4791352536",
+  "token": "$2a$08$j7Bd0wRNjoHij6AJi6yrmO.XxfV39NkawFvmF4BapS/HO04LVWKqS",
+  "sendWhitelist": [
+    "*"
+  ],
+  "receiveWhitelist": [
+    "*"
+  ]
+}
